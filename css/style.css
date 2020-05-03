@@ -358,6 +358,9 @@ h2 {
 }
 
 @media (max-width: 576px) {
+  #skills .container .row img {
+    opacity: 1;
+  }
   #skills .container .row span {
     display: none;
   }

@@ -291,6 +291,9 @@ h2 {
   #skills {
     .container {
       .row {
+        img {
+          opacity: 1;
+        }
         span {
           display: none;
         }
