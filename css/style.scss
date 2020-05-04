@@ -367,7 +367,9 @@ nav {
     .row {
       margin-top: 30px;
       img {
-        max-height: 60px;
+        max-height: 50px;
+        display: block;
+        margin: auto;
         opacity: 0.5;
         &:hover {
           opacity: 1;

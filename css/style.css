@@ -364,7 +364,9 @@ nav .container ul li {
 }
 
 #skills .container .row img {
-  max-height: 60px;
+  max-height: 50px;
+  display: block;
+  margin: auto;
   opacity: 0.5;
 }
 
