@@ -187,32 +187,28 @@ nav .container ul li {
   display: block;
 }
 
-#hero .text #light,
-#hero .text #dark {
-  display: inline-block;
-  cursor: pointer;
-  font-size: 2.2rem;
-  margin: 0px 150px;
-}
-
-#hero .text #light {
+#hero #light {
+  position: absolute;
+  right: 15px;
+  bottom: 10px;
+  font-size: 1.8rem;
   color: white;
+  cursor: pointer;
 }
 
-#hero .text #dark {
-  color: black;
+#hero #dark {
+  position: absolute;
+  right: 15px;
+  bottom: 10px;
+  font-size: 1.8rem;
+  color: white;
+  cursor: pointer;
+  display: none;
 }
 
 @media (max-width: 576px) {
   #hero {
     height: 400px;
-  }
-  #hero .text {
-    margin-top: 10px;
-  }
-  #hero .text #light,
-  #hero .text #dark {
-    margin: 0px 10px !important;
   }
 }
 

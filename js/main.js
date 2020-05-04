@@ -399,9 +399,13 @@ let dark = document.getElementById('dark');
 light.addEventListener('click', function () {
   document.body.style.backgroundColor = 'white';
   document.body.style.color = 'black';
+  light.style.display = 'none';
+  dark.style.display = 'inline';
 });
 
 dark.addEventListener('click', function () {
   document.body.style.backgroundColor = '#282c33';
   document.body.style.color = 'white';
+  light.style.display = 'inline';
+  dark.style.display = 'none';
 });
