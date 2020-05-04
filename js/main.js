@@ -21,7 +21,7 @@ for (var i = 0; i < 6; i++) {
 let progress = document.getElementById('progressbar');
 let totalHeight = document.body.scrollHeight - window.innerHeight;
 window.onscroll = function () {
-  let progresswidth = (window.pageYOffset / totalHeight) * 100;
+  var progresswidth = (window.pageYOffset / totalHeight) * 100;
   progress.style.width = progresswidth + '%';
 };
 
@@ -35,12 +35,14 @@ datey.innerHTML = datenow.getFullYear();
 
 let light = document.getElementById('light');
 let dark = document.getElementById('dark');
+let wave = document.getElementById('wave');
 
 light.addEventListener('click', function () {
   document.body.style.backgroundColor = 'white';
   document.body.style.color = 'black';
   light.style.display = 'none';
   dark.style.display = 'inline';
+  wave.style.fill = 'white';
 });
 
 dark.addEventListener('click', function () {
@@ -48,6 +50,7 @@ dark.addEventListener('click', function () {
   document.body.style.color = 'white';
   light.style.display = 'inline';
   dark.style.display = 'none';
+  wave.style.fill = '#282c33';
 });
 
 // ---------------------------------------------------------------------------------------------------- Google Maps Restyling

@@ -378,6 +378,7 @@ nav .container ul li {
   font-size: 1.8rem;
   color: white;
   cursor: pointer;
+  z-index: 10;
 }
 
 #hero #dark {
@@ -385,9 +386,16 @@ nav .container ul li {
   right: 15px;
   bottom: 10px;
   font-size: 1.8rem;
-  color: white;
+  color: #282c33;
   cursor: pointer;
   display: none;
+  z-index: 10;
+}
+
+#hero svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 @media (max-width: 576px) {
