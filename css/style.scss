@@ -206,6 +206,13 @@ nav {
 @media (max-width: 576px) {
   #hero {
     height: 400px;
+    .text {
+      margin-top: 10px;
+      #light,
+      #dark {
+        margin: 0px 10px !important;
+      }
+    }
   }
 }
 

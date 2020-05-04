@@ -207,6 +207,13 @@ nav .container ul li {
   #hero {
     height: 400px;
   }
+  #hero .text {
+    margin-top: 10px;
+  }
+  #hero .text #light,
+  #hero .text #dark {
+    margin: 0px 10px !important;
+  }
 }
 
 /* -------------------------------------------------------------------------------------------------------- Who Am I Section Styles */
