@@ -559,9 +559,8 @@ nav {
     margin: auto;
     text-align: center;
     a {
-      @extend %transition-3;
+      @extend %transition-5;
       font-size: 2.2rem;
-      filter: grayscale(100%);
       padding: 10px;
       &:nth-of-type(1) {
         color: #1877f2;
@@ -579,13 +578,13 @@ nav {
         color: #2977b5;
       }
       &:nth-of-type(6) {
-        color: #6f941a;
+        color: #738d35;
       }
       &:nth-of-type(7) {
-        color: #ff7373;
+        color: #ffc5c5;
       }
       &:hover {
-        filter: grayscale(0%);
+        color: black;
       }
     }
   }
