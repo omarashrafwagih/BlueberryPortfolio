@@ -390,3 +390,18 @@ function init() {
 let datey = document.getElementById('datey');
 let datenow = new Date();
 datey.innerHTML = datenow.getFullYear();
+
+// Dark and Light Versions
+
+let light = document.getElementById('light');
+let dark = document.getElementById('dark');
+
+light.addEventListener('click', function () {
+  document.body.style.backgroundColor = 'white';
+  document.body.style.color = 'black';
+});
+
+dark.addEventListener('click', function () {
+  document.body.style.backgroundColor = '#282c33';
+  document.body.style.color = 'white';
+});
