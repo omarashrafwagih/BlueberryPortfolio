@@ -1,4 +1,4 @@
-// Loading Spinner Show & Hide
+// ---------------------------------------------------------------------------------------------------- Loading Spinner Show & Hide
 let spinner = document.getElementById('spinner');
 window.addEventListener('load', function () {
   spinner.style.display = 'none';
@@ -17,7 +17,40 @@ for (var i = 0; i < 6; i++) {
   });
 }
 
-// Google Maps Restyling
+// ---------------------------------------------------------------------------------------------------- Custom Scroll
+let progress = document.getElementById('progressbar');
+let totalHeight = document.body.scrollHeight - window.innerHeight;
+window.onscroll = function () {
+  let progresswidth = (window.pageYOffset / totalHeight) * 100;
+  progress.style.width = progresswidth + '%';
+};
+
+// ---------------------------------------------------------------------------------------------------- Get Date into Footer
+
+let datey = document.getElementById('datey');
+let datenow = new Date();
+datey.innerHTML = datenow.getFullYear();
+
+// ---------------------------------------------------------------------------------------------------- Dark and Light Versions
+
+let light = document.getElementById('light');
+let dark = document.getElementById('dark');
+
+light.addEventListener('click', function () {
+  document.body.style.backgroundColor = 'white';
+  document.body.style.color = 'black';
+  light.style.display = 'none';
+  dark.style.display = 'inline';
+});
+
+dark.addEventListener('click', function () {
+  document.body.style.backgroundColor = '#282c33';
+  document.body.style.color = 'white';
+  light.style.display = 'inline';
+  dark.style.display = 'none';
+});
+
+// ---------------------------------------------------------------------------------------------------- Google Maps Restyling
 
 // When the window has finished loading create our google map below
 google.maps.event.addDomListener(window, 'load', init);
@@ -391,28 +424,3 @@ function init() {
     title: 'Snazzy!',
   });
 }
-
-// Get Date into Footer
-
-let datey = document.getElementById('datey');
-let datenow = new Date();
-datey.innerHTML = datenow.getFullYear();
-
-// Dark and Light Versions
-
-let light = document.getElementById('light');
-let dark = document.getElementById('dark');
-
-light.addEventListener('click', function () {
-  document.body.style.backgroundColor = 'white';
-  document.body.style.color = 'black';
-  light.style.display = 'none';
-  dark.style.display = 'inline';
-});
-
-dark.addEventListener('click', function () {
-  document.body.style.backgroundColor = '#282c33';
-  document.body.style.color = 'white';
-  light.style.display = 'inline';
-  dark.style.display = 'none';
-});

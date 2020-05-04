@@ -127,6 +127,26 @@ $navlinks-hover: #8a00ff;
   }
 }
 
+/* -------------------------------------------------------------------------------------------------------- Custom Scrollbar Styles */
+
+#scrollpath {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+}
+
+#progressbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 10px;
+  width: 0%;
+  background: linear-gradient(to right, white, $navlinks-hover);
+  border-radius: 80px;
+}
+
 /* -------------------------------------------------------------------------------------------------------- Global Styles */
 
 * {
@@ -188,6 +208,11 @@ h2 {
 ::selection {
   background-color: magenta;
   color: yellowgreen;
+}
+
+::-webkit-scrollbar {
+  display: none;
+  width: 0px;
 }
 
 /* -------------------------------------------------------------------------------------------------------- Navbar Bootstrap Restyling */
