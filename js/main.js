@@ -17,18 +17,6 @@ for (var i = 0; i < 6; i++) {
   });
 }
 
-// ---------------------------------------------------------------------------------------------------- Laxxx Js
-window.onload = function () {
-  lax.setup(); // init
-
-  const updateLax = () => {
-    lax.update(window.scrollY);
-    window.requestAnimationFrame(updateLax);
-  };
-
-  window.requestAnimationFrame(updateLax);
-};
-
 // ---------------------------------------------------------------------------------------------------- Custom Scroll
 let progress = document.getElementById('progressbar');
 let totalHeight = document.body.scrollHeight - window.innerHeight;
