@@ -1,3 +1,10 @@
+// Loading Spinner Show & Hide
+let spinner = document.getElementById('spinner');
+window.addEventListener('load', function () {
+  spinner.style.display = 'none';
+  document.body.style.overflowY = 'auto';
+});
+
 // Navbar AutoClose After Link Click
 const navlinks = document.getElementsByClassName('nav-link');
 const navbarSupportedContent = document.getElementById(
