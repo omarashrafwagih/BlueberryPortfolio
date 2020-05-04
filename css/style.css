@@ -52,8 +52,8 @@ h2 {
   font-size: 2.2rem;
   width: 100vw;
   text-align: center;
-  padding-top: 60px;
-  padding-bottom: 25px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   font-size: 3.8rem;
   color: transparent;
   -webkit-background-clip: text;
@@ -305,10 +305,6 @@ nav .container ul li {
 }
 
 /* -------------------------------------------------------------------------------------------------------- Experiences Section Styles */
-#experiences .container .row {
-  margin-top: 80px;
-}
-
 #experiences .container .row::after {
   display: block;
   content: '';
@@ -324,6 +320,14 @@ nav .container ul li {
   display: block;
   margin-bottom: 10px;
   color: #8a00ff;
+}
+
+#experiences .container .row .date::before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f068';
+  margin-right: 10px;
+  font-size: 1rem;
 }
 
 #experiences .container .row .date i {
