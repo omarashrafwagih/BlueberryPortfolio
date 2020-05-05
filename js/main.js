@@ -17,6 +17,17 @@ for (var i = 0; i < 6; i++) {
   });
 }
 
+// ---------------------------------------------------------------------------------------------------- Append Wow Initialization
+if (
+  /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+    navigator.userAgent
+  )
+) {
+  // Do Nothing
+} else {
+  new WOW().init();
+}
+
 // ---------------------------------------------------------------------------------------------------- Custom Scroll
 let progress = document.getElementById('progressbar');
 let totalHeight = document.body.scrollHeight - window.innerHeight;
