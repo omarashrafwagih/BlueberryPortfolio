@@ -410,7 +410,6 @@ nav {
       margin-left: 10px;
     }
     &:hover {
-      transform: scale(0.975);
       background-color: #6700c2;
     }
   }
@@ -537,6 +536,60 @@ nav {
         span {
           display: none;
         }
+      }
+    }
+  }
+}
+
+/* --------------------------------------------------------------------------------------------------------  Portfolio Section Styles */
+
+#portfolio {
+  .container {
+    .row {
+      .item {
+        margin-top: 50px;
+        span {
+          @extend h1;
+          font-size: 1.5rem;
+        }
+        img {
+          @extend %transition-5;
+          max-width: 100%;
+          display: block;
+          margin-bottom: 10px;
+          &:hover {
+            transform: scale(1.05);
+          }
+        }
+        a {
+          @extend %transition-3;
+          width: 230px;
+          margin: 25px auto;
+          text-align: center;
+          padding: 6px 12px;
+          border-radius: 5px;
+          text-decoration: none;
+          background-color: $navlinks-hover;
+          color: white;
+          font-size: 1rem;
+          i {
+            margin-right: 7px;
+            font-size: 1rem;
+          }
+          &:hover {
+            background-color: #6700c2;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  #portfolio {
+    img {
+      &:hover {
+        transform: scale(1) !important;
       }
     }
   }

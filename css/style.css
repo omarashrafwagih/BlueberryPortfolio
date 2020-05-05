@@ -1,11 +1,11 @@
 /* -------------------------------------------------------------------------------------------------------- Variables */
 /* -------------------------------------------------------------------------------------------------------- Extends Styles */
-#whoami a {
+#whoami a, #portfolio .container .row .item a {
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
 
-.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .nav-link::after, #contact .container a {
+.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .nav-link::after, #portfolio .container .row .item img, #contact .container a {
   -webkit-transition: all 500ms ease-in-out;
   transition: all 500ms ease-in-out;
 }
@@ -219,7 +219,7 @@ body {
   overflow-y: hidden;
 }
 
-h1 {
+h1, #portfolio .container .row .item span {
   font-family: 'Damion', cursive;
   font-size: 6rem;
   width: 100vw;
@@ -243,7 +243,7 @@ h2 {
 }
 
 @media (max-width: 768px) {
-  h1 {
+  h1, #portfolio .container .row .item span {
     font-size: 3.5rem;
   }
   h2 {
@@ -472,8 +472,6 @@ nav .container ul li {
 }
 
 #whoami a:hover {
-  -webkit-transform: scale(0.975);
-          transform: scale(0.975);
   background-color: #6700c2;
 }
 
@@ -584,6 +582,54 @@ nav .container ul li {
   }
   #skills .container .row span {
     display: none;
+  }
+}
+
+/* --------------------------------------------------------------------------------------------------------  Portfolio Section Styles */
+#portfolio .container .row .item {
+  margin-top: 50px;
+}
+
+#portfolio .container .row .item span {
+  font-size: 1.5rem;
+}
+
+#portfolio .container .row .item img {
+  max-width: 100%;
+  display: block;
+  margin-bottom: 10px;
+}
+
+#portfolio .container .row .item img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+#portfolio .container .row .item a {
+  width: 230px;
+  margin: 25px auto;
+  text-align: center;
+  padding: 6px 12px;
+  border-radius: 5px;
+  text-decoration: none;
+  background-color: #8a00ff;
+  color: white;
+  font-size: 1rem;
+}
+
+#portfolio .container .row .item a i {
+  margin-right: 7px;
+  font-size: 1rem;
+}
+
+#portfolio .container .row .item a:hover {
+  background-color: #6700c2;
+}
+
+@media (max-width: 576px) {
+  #portfolio img:hover {
+    -webkit-transform: scale(1) !important;
+            transform: scale(1) !important;
   }
 }
 
