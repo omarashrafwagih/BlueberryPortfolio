@@ -1,0 +1,22 @@
+%transition-3 {
+  transition: all 300ms ease-in-out;
+}
+
+%transition-5 {
+  transition: all 500ms ease-in-out;
+}
+
+%overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  z-index: 20;
+}
+
+.show {
+  color: $navlinks-hover;
+  padding: 0 5px;
+}

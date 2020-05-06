@@ -1,5 +1,3 @@
-/* -------------------------------------------------------------------------------------------------------- Variables */
-/* -------------------------------------------------------------------------------------------------------- Extends Styles */
 #whoami a, #portfolio .container .row .item a {
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
@@ -15,14 +13,13 @@
   padding: 0 5px;
 }
 
-/* -------------------------------------------------------------------------------------------------------- Loading Spinner Styles */
 #spinner {
   width: 100%;
   height: 100vh;
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 10000;
+  z-index: 100000;
   background-color: #282c33;
 }
 
@@ -173,7 +170,6 @@
   }
 }
 
-/* -------------------------------------------------------------------------------------------------------- Custom Scrollbar Styles */
 #scrollpath {
   position: fixed;
   bottom: 0;
@@ -193,7 +189,6 @@
   border-radius: 80px;
 }
 
-/* -------------------------------------------------------------------------------------------------------- Global Styles */
 * {
   margin: 0;
   padding: 0;
@@ -266,8 +261,8 @@ h2 {
   width: 0px;
 }
 
-/* -------------------------------------------------------------------------------------------------------- Navbar Bootstrap Restyling */
 nav {
+  z-index: 30000 !important;
   font-size: small;
   height: 55px;
   background-color: #282c33;
@@ -362,6 +357,7 @@ nav .container ul li {
   position: absolute;
   top: 50%;
   left: 50%;
+  z-index: 2000;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
